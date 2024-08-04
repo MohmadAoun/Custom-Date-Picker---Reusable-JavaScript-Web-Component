@@ -1,7 +1,5 @@
 # Custom Date Picker
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 Welcome to the **Custom Date Picker** repository! This project is a web component-based date picker, implemented using JavaScript, HTML, and CSS. This README provides an overview of the functionality, code structure, and usage of the date picker. Additionally, it includes a screenshot to give a visual representation of the final implementation.
 
 ## Table of Contents
@@ -112,7 +110,9 @@ class CalendarGrid extends HTMLElement {
 
 ## Screenshot
 
-![Date Picker Screenshot](screenshot.png)
+![Screenshot 2024-08-04 032146](https://github.com/user-attachments/assets/ef35430b-2f84-439b-a1fc-6200103729aa)![Screenshot 2024-08-04 032154](https://github.com/user-attachments/assets/73c4e6dd-1b83-4d7a-88eb-ac355a55426e)
+
+
 
 ---
 
