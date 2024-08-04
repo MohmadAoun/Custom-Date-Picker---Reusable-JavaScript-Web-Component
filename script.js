@@ -62,24 +62,20 @@ class DropdownSelector extends HTMLElement {
         position: relative;
       }
       .arrow {
-        margin-left: 5px;
+        margin-left: 1vw;
       }
       .dropdown {
         position: absolute;
         top: 100%;
-        left: 0;
-        background-color: #FFFFFF;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        background-color: #F0F2E9;
+        border-radius: 5%;
         padding: 0.5rem;
         cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        max-height: 200px;
-        overflow-y: auto;
+        max-height: 40vh;
+        overflow-y: scroll;
       }
       .dropdown-option {
-        padding: 0.5rem;
+        padding: 0.3rem;
       }
     `;
     this.shadowRoot.append(style);
@@ -185,13 +181,12 @@ class CalendarGrid extends HTMLElement {
       .grid-container {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        gap: 5px;
       }
       .grid-cell {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 0.7rem;
         font-size: clamp(0.5rem, 1vw, 1rem);
         color: #43493e;
         cursor: pointer;
@@ -302,12 +297,10 @@ class CalendarGrid extends HTMLElement {
   }
 }
 
-// Register custom elements
 customElements.define("calendar-grid", CalendarGrid);
 customElements.define("month-selector", MonthSelector);
 customElements.define("year-selector", YearSelector);
 
-// Event listeners for updating the calendar
 document
   .querySelector("month-selector")
   .addEventListener("month-change", (event) => {
