@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2e9;
+}
+
+.centered-box {
+  background-color: #e5ebdc;
+  border-radius: 5%;
+  height: max-content;
+  width: max-content;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label,
+.selected-date,
+.days-name,
+.month-year-selector {
+  color: #43493e;
+  font-weight: normal;
+  font-size: clamp(0.6rem, 1vw, 2rem);
+  margin: 1% 0 5%;
+}
+
+.selected-date {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(0.5rem, 1vw, 2rem);
+}
+
+.icon {
+  font-size: clamp(0.4rem, 0.8vw, 2rem);
+  display: flex;
+  align-items: center;
+}
+.days-name,
+.month-selector,
+.year-selector,
+.month-year-selector {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+.month-selector,
+.year-selector {
+  width: 5vw;
+}
+.days-name {
+  display: flex;
+  flex-direction: row;
+}
+.day {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5vw;
+}
+.divider {
+  margin: 1% 0 5%;
+}
